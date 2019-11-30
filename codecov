@@ -1556,6 +1556,7 @@ else
   # now add token to query
   query=$(echo "package=bash-$VERSION&token=$token&$query" | tr -d ' ')
 
+  set -x
   if [ "$ft_s3" = "1" ];
   then
     i="0"
